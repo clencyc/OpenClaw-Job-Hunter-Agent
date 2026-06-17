@@ -1,50 +1,44 @@
 import os
+import argparse
 import asyncio
 from dotenv import load_dotenv
 from browser_use import Agent
-from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
 
-load_dotenv()
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
-async def main():
-    # 1. Load your CV context
-    with open("resume.txt", "r") as file:
+async def run_autonomous_application(url: str):
+    resume_path = os.path.join(os.path.dirname(__file__), 'resume.txt')
+    with open(resume_path, "r") as file:
         my_resume = file.read()
 
-    # 2. Configure the LLM that will look at the web pages and make decisions
-    # Vision capabilities are crucial here for identifying fields correctly
-    llm = ChatOpenAI(model="gpt-4o", temperature=0.0)
-
-    # 3. Formulate the dynamic task string
-    target_job_url = "https://boards.greenhouse.io/examplecompany/jobs/12345"
+ 
+    llm = ChatOllama(
+        model="qwen3:8b",          
+        temperature=0.0,
+        num_ctx=32000             
+    )
     
     task_instructions = f"""
-    Go to this job application page: '{target_job_url}'.
-    
-    Your goal is to apply for this job completely on my behalf.
-    Here is all my professional data and resume details:
+    Go to this job application page: '{url}'
+    Using my resume context below, accurately fill out the form input fields (Name, email, links, text questions).
+    Adopt a professional engineering persona. Do NOT click submit. Stop at the review screen.
     ---
     {my_resume}
-    ---
-    
-    Guidelines:
-    1. Fill in all standard fields: First Name, Last Name, Email, Phone, LinkedIn, GitHub.
-    2. Look for an "Upload Resume" button. Click it and look for a local file named 'resume.pdf' to upload if a file input is requested.
-    3. If there are text questions (e.g., 'Why do you want to join?'), answer them concisely, adopting a professional, confident, and proactive engineering tone matching my profile.
-    4. Crucial Guardrail: Do NOT click the final 'Submit Application' or 'Apply' button yet. Stop at the final review screen and let me know you are done filling it out.
     """
-
-    # 4. Initialize and run the autonomous agent
-    agent = Agent(
-        task=task_instructions,
-        llm=llm
-    )
-
-    history = await agent.run()
     
-    # 5. Print the execution path for logging/sheets integration
-    print("Execution complete!")
-    print(history.final_result())
+    agent = Agent(
+        task=task_instructions, 
+        llm=llm,
+        max_actions_per_step=1    
+    )
+    
+    history = await agent.run()
+    return history.final_result()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--url", required=True, help="Job posting URL")
+    args = parser.parse_args()
+    
+    asyncio.run(run_autonomous_application(args.url))
