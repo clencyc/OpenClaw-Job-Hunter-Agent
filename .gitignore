@@ -1,0 +1,15 @@
+# Ignore sensitive API keys and local configs
+.env
+*.env
+credentials.json
+
+# Ignore temporary session memory, caches, or virtual envs
+memory/
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Optional: Ignore your raw PDF resume if you want to keep it private
+resume.pdf
+resume.txt

@@ -1,0 +1,58 @@
+CLENCY CHRISTINE
++254 792 552 491 | christineoyiera51@gmail.com | GitHub/LinkedIn: clencyc | Clency Christine
+
+PROFESSIONAL SUMMARY
+Motivated third-year B.Sc. Mathematics and Computer Science student at JKUAT with hands-on development experience from ALX Africa and eMobilis bootcamps. Passionate about building impactful fintech and AI solutions for Kenya's underserved communities, including AI-powered saving/investing tools. Award-winning developer (2nd Place Absa GirlCodeHack 2025) eager to contribute backend skills to technology while learning large-scale telco systems, mobile innovation, and cyber-aware development in a fast-paced Kenyan tech leader environment.
+
+EDUCATION & CERTIFICATIONS
+Jomo Kenyatta University of Agriculture and Technology (JKUAT) - Nairobi, Kenya
+B.Sc. Mathematics and Computer Science | 08/2023 - 12/2027 (Expected)
+• Key coursework: Linear Algebra, Probability & Statistics, Calculus, Data Structures & Algorithms, Software Engineering
+
+ALX Africa (Remote)
+Certificate in Software Engineering | 2023 - 2024
+• Intensive, project-based program focused on full-stack development, software engineering principles, and real-world problem-solving
+• Built strong foundations in coding best practices, version control, and collaborative development
+
+eMobilis Mobile Technology Training Institute - Kipro Centre, Westlands, Nairobi, Kenya
+Full Stack Web Development | 01/2023 - 05/2023
+• Hands-on training in frontend (HTML, CSS, JavaScript), backend (Python/Django), databases (MySQL), and mobile integration (Kotlin/Android basics)
+• Developed complete web applications, emphasizing practical, job-ready skills for Kenya's digital economy
+
+Additional Certifications & Self-Study
+• Machine learning fundamentals (Udacity Nanodegree)
+• Current AI research (ArXiv preprints, OpenAI/DeepMind/Anthropic papers)
+
+TECHNICAL PROJECTS & EXPERIENCE
+Developer - GKash (All-women team)
+Mobile-first AI Fintech App for Underserved Communities | 10/2025 - Present
+• Co-developed GKash AI-driven app for financial literacy, saving, and investing targeted at women entrepreneurs and gig workers in Kenya
+• Implemented personalized lessons, micro-savings trackers, investment simulations, voice-guided UX, and inclusive low-literacy features
+• Secured 2nd Place nationally in Absa GirlCodeHack 2025 (Pan-African women-in-tech - FinTech/AI track)
+• Accepted into accelerator with mentorship, resources, and investor connections
+
+Backend Engineer - Creative Credit AI
+AI Credit Scoring Platform for Creatives & Gig Workers | 09/2025 - Present
+• Built backend systems for real-time credit assessment using diverse income streams (M-Pesa, PayPal, gig platforms)
+• Developed fraud detection models and anomaly monitoring to enable fair lending in emerging markets
+
+Software Developer - HakiChain
+Legal AI Research Tool | 06/2025 - 11/2025
+• Engineered web-crawling pipeline to extract/structure Kenyan case law from kenyalaw.org
+• Created contextual embeddings for retrieval-augmented generation (RAG) with Gemini-powered reasoning
+• Delivered secure FastAPI backend (Python, Vercel) with role-based access and lawyer-friendly query interface
+
+COMMUNITY & LEADERSHIP
+• Organized GDG on Campus workshops on AI/ML and cloud computing at JKUAT
+• Co-organized AI Students Summit 2025 and Datathon 2026
+• Active in women-in-tech initiatives and local Kenyan innovation communities
+
+AWARDS & RECOGNITION
+• 2nd Place - Absa GirlCodeHack 2025 (Pan-African FinTech/AI track)
+• 3rd Place - Code Her Hackathon 2025 (secured 3-week residency program spot)
+
+TECHNICAL SKILLS & LANGUAGES
+• Programming & Tools: Python, SQL, Kotlin, JavaScript, HTML, CSS, C++ (learning), Git/GitHub, FastAPI, Django, Docker, Jupyter/Colab, Firebase, AWS basics, LaTeX
+• Mathematics & AI/ML Foundations: Calculus, Linear Algebra, Probability & Statistics, Optimization, ML fundamentals, Retrieval-Augmented Generation (RAG), Basic reinforcement learning & scaling laws
+• Languages: English (Fluent), Kiswahili (Conversational)
+• Other Competencies: Full-stack web & mobile development, Agile collaboration, Fintech innovation (M-Pesa ecosystem inspired), Passion for large-scale telco/tech systems and cyber-aware development in Kenya
