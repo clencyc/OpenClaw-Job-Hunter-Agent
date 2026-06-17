@@ -8,7 +8,7 @@ from langchain_ollama import ChatOllama
 load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 async def run_autonomous_application(url: str):
-    resume_path = os.path.join(os.path.dirname(__file__), 'resume.txt')
+    resume_path = os.path.join(os.path.dirname(__file__), 'clency_resume.txt')
     with open(resume_path, "r") as file:
         my_resume = file.read()
 
