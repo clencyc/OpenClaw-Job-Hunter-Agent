@@ -14,7 +14,7 @@ async def run_autonomous_application(url: str):
 
  
     llm = ChatOllama(
-        model="qwen3:8b",          
+        model="qwen3:4b",          
         temperature=0.0,
         num_ctx=32000             
     )

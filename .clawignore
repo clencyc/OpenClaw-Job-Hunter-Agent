@@ -1,0 +1,14 @@
+# Ignore dependency directories
+node_modules/
+.venv/
+venv/
+__pycache__/
+.git/
+
+# Ignore log files and raw scraped caches
+*.log
+*.json
+*.html
+*.md
+!tools.md
+!resume.md
